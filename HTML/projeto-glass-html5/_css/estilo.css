@@ -1,15 +1,53 @@
 @charset"UTF-8";
 
 body{
-			background-color: white;
-			color:black;
-		}
-		p{
-			text-align:justify; 
-			text-indent:50px;
-		}
+	background-color: #dddddd;
+	color:rgba(0,0,0,1);
+}
 
-/*Formatação de cores*/
+div#interface{
+	width: 900px;
+	background-color: #ffffff;
+	margin: -20px auto 0px auto; /*-20(gruda no topo), auto(redimenciona de acordo com o tamanho da tela, direita), 0 baixo, auto(resize,esquerda)*/
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5); /*sobreado entorno do box*/
+	padding: 10px 10px 10px 10px; /*distancia interna das coisas(imagens,textos), para não grudar no box*/
+}
+
+p{
+	text-align:justify; 
+	text-indent:50px;
+}
+
+header#cabecalho img#icone{
+	position: absolute;
+	left: 950px;
+	top: 65px;
+}
+
+header#cabecalho{
+	border-bottom: 1px #606060 solid; /*colocar uma barra horizontal no topo*/
+	height: 150pt;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 130px;/*(.. volta uma pasta)*/
+}
+
+header#cabecalho h1{ /*para todo cabeçaho h1, aplica-se*/
+	font-family: Arial, sans-serif;
+	font-size: 30px;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px; 
+}
+
+header#cabecalho h2{
+	font-family: Arial, sans-serif;
+	font-size: 15pt;
+	color: #888888;
+	padding: 0px;
+	margin-top: 0px;
+
+}
+/*Formatação de imagens com legendas*/
 
 figure.foto-legenda{
 	position: relative;
@@ -50,16 +88,36 @@ nav#menu ul{
 	text-transform: uppercase; /*tudo maiusculo*/
 	position: absolute; /*fica livre no site*/
 	top: -20px;
-	left: 797px;
+	left: 600px;
 }
 
 nav#menu li{
 	display: inline-block; /*para exibir tudo na mesma linha*/
-	background-color:dddddd;/*cor de fundo*/
+	background-color: #dddddd;/*cor de fundo*/
 	padding: 10px; /*colocar espaçamento dentro do objeto*/
 	margin: 2px; /* espaçamento fora do objeto*/
+	-webkit-transition: background-color 1s;/*para navegadores mais antigos*/
+	-moz-transition: background-color 1s;
+	-ms-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	transition: background-color 1s; /*colocar transição de cor no menu(mas isso não é oficial em todos os navegadores)*/
+}
+
+nav#menu li:hover/*efeito de quando passar o mouse por cima*/{
+	background-color: #606060;
+
 }
 
 nav#menu h1{
 	display: none; /*Esconder as palavras "Menu Principal"*/
+}
+
+nav#menu a {  /*configurando todos os links do menu*/
+	color: #000000;  /*cor preta*/
+	text-decoration: none; /*sem sublinhado*/
+}
+
+nav#menu a:hover{/*quando mouse passar por cima o link muda de cor*/
+	color: #ffffff; 
+	text-decoration: underline; /*quando o mouse passar ele muda para sublinhado*/
 }
