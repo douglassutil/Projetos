@@ -1,0 +1,65 @@
+@charset"UTF-8";
+
+body{
+			background-color: white;
+			color:black;
+		}
+		p{
+			text-align:justify; 
+			text-indent:50px;
+		}
+
+/*Formatação de cores*/
+
+figure.foto-legenda{
+	position: relative;
+	border: 8px solid white; /*bordas*/
+	box-shadow:1px 1px 4px black;
+}
+
+figure.foto-legenda img{/*figura se desloca junto com as bordas*/
+	width: 100%;
+	height: 100%;
+
+}
+
+figure.foto-legenda figcaption{/*posição da legenda*/
+	opacity: 0; /*ficar transparente*/
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.4);/*colocando uma borda preta para a legenda com transparencia .4*/
+	color: white; /*dando cor branca à escrita*/
+	width: 100%; /* de acordo com o tamanho da imagem o fundo vai crescer ou diminuir*/
+	height: 100%;
+	padding: 10px; /*uma distância no início da legenda*/
+	box-sizing: border-box; /*cria um box dentro da borda, assim a legenda não ultrapassa a imagem*/
+	transition: opacity 1s; /* tempo para legenda sair quando o mouse passar pela imagem*/
+
+}
+
+figure.foto-legenda:hover figcaption{ /* quando passar o mouse, a legenda some*/
+	opacity: 1
+}
+
+/*Formatação Menu*/
+nav#menu ul{ /* #menu significa id menu*/
+	display: block; /*falo que meu menu é um bloco, pois blocos podem flutuar na tela*/
+}
+nav#menu ul{
+	list-style: none; /*retira os marcadores*/
+	text-transform: uppercase; /*tudo maiusculo*/
+	position: absolute; /*fica livre no site*/
+	top: -20px;
+	left: 797px;
+}
+
+nav#menu li{
+	display: inline-block; /*para exibir tudo na mesma linha*/
+	background-color:dddddd;/*cor de fundo*/
+	padding: 10px; /*colocar espaçamento dentro do objeto*/
+	margin: 2px; /* espaçamento fora do objeto*/
+}
+
+nav#menu h1{
+	display: none; /*Esconder as palavras "Menu Principal"*/
+}
