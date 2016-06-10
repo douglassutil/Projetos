@@ -33,29 +33,16 @@
 	</header>
 
 <section id="corpo">
+
+<article id="noticia-principal">
+<header id="cabecalho-artigo">
 <hgroup>
 <h3>Tecnologia > Inovações</h3>
 <h1>Saiba tudo sobre o Google Glass</h1>
 <h2>por Gustavo Guanabara</h2>
-<h3>Atualizado em 23/Abril/2013</h3>
+<h3 class="direita">Atualizado em 23/Abril/2013</h3>
+</header>
 </hgroup>
-
-<h1>Símbolos Especiais</h1>
-
-<p>
-	&lt; <!--menor que-->
-	&gt; <!--maior que-->
-	&le; <!--menor ou igual-->
-	&ge; <!--maior ou igual--> <br/>
-
-	&pound; <!--libras-->
-	&yen;
-	&euro; <br/>
-
-	&copy; <!--Copyright-->
-	&reg; <!--marca registrada-->
-	&trade; <!--TM--> <br/>
-</p>
 
 <h2 style="text-align:center;">O que é</h2> <!--centralizando com CSS-->
 <p>O <b>Google Glass</b><!--Negrito em HTML--> é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <i>Project Glass</i><!--Itálico em HTML-->, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeo&shy;<!--quebra de palavras colocando hífens-->conferências. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o <del>Google Glass</del> <!--risca a palavra--> encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
@@ -72,13 +59,17 @@
 <h2>Data de lançamento</h2>
 <p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
 
-<h1>Especificações Técnicas</h1>
-<h2>Tabela Técnica do Google Glass Mar/2013</h2>
+<h2>Especificações Técnicas</h2>
+<table id="tabelaspec">
+<caption>Tabela Técnica do Google Glass <span>Mar/2013</span></caption> <!--caption, titulo da tabela-->
 
-<p>Tela:Resolução equivalente a tela de 25"
-Camera: 5MP para fotos / 720p para vídeos
-Conectividade: Wi-Fi/ Bluetooth
-Memória Interna: 12GB</p>
+<tr><td class="ce">Tela</td><td class="cd">Resolução equivalente a tela de 25"</tr></td> <!--tr(linhas), td(células)-->
+<tr><td rowspan="2"class="ce">Camera</td><td class="cd">5MP para fotos  </tr></td><!--(colspan="2" para duas colunas)rowspans indica q usará mais de uma linha-->
+<tr><td class="cd">720p para vídeos</td></tr>
+<tr><td rowspan="2"class="ce">Conectividade</td> <td class="cd">Wi-Fi</tr></td>
+<tr><td class="cd">Bluetooth</td></tr>
+<tr><td class="ce">Memória Interna</td> <td class="cd">12GB</tr></td>
+</table>
 
 <h2>Como funciona</h2>
 <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça</p>
@@ -87,7 +78,7 @@ Memória Interna: 12GB</p>
 <p>O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-<wbr/><!--significa que a palavra pode ser quebrada, mas ele não colocará hífens-->humano”, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.</p>
 
 [AQUI ENTRA UM VÍDEO]
-
+</article>
 </section>
 
 
@@ -106,7 +97,7 @@ Memória Interna: 12GB</p>
 
 
 <footer id="rodape">
-<p>Copyright 2013 - by Gustavo Guanabara
+<p>Copyright 2013 - by Gustavo Guanabara</br><!--quebra de linha-->
 Facebook | Twitter</p>
 </footer>
 </div>

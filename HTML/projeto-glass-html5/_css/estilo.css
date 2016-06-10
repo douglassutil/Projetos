@@ -8,6 +8,7 @@
 } 
 
 body{
+	font-family: Arial, sans-serif; /*todo o texto será arial e sem serifa*/
 	background-color: #dddddd;
 	color:rgba(0,0,0,1);
 }
@@ -25,6 +26,15 @@ p{
 	text-indent:50px;
 }
 
+a{ /*todos os links serão cinza e sem sublinhado*/
+	color: #606060;
+	text-decoration: none;
+}
+
+a:hover{/*quando passar o mouse por cima, ele ficará sublinhado*/
+	text-decoration:underline;
+}
+
 header#cabecalho img#icone{
 	position: absolute;
 	left: 950px;
@@ -33,7 +43,7 @@ header#cabecalho img#icone{
 
 header#cabecalho{
 	border-bottom: 1px #606060 solid; /*colocar uma barra horizontal no topo*/
-	height: 150pt;
+	height: 100pt;
 	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 75px;/*(.. volta uma pasta)*/
 }
 
@@ -54,6 +64,7 @@ header#cabecalho h2{
 	margin-top: 0px;
 
 }
+
 /*Formatação de imagens com legendas*/
 
 figure.foto-legenda{
@@ -133,11 +144,115 @@ section#corpo {
 	display: block;
 	width: 500px;
 	float: left;
+	border-right: 1px solid #606060; /*borda do lado direito*/
+	padding-right: 15px;
 
+}
+
+article#noticia-principal h2{
+	font-size: 13pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1{
+	font-family: 'FonteLogo',sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+header#cabecalho-artigo h2{
+	font-size: 13pt;
+	color: #cecece;
+	background-color: #ffffff;
+}
+
+header#cabecalho-artigo h3{
+	font-size: 12px;
+	color: #606060;
+}
+
+.direita{ /* o mesmo que "header#cabecalho-artigo h3.direita" */
+	text-align:right;
+}
+
+table#tabelaspec { /*cria a borda externa da tabela*/
+	border: 1px solid #606060;
+	border-spacing: 0px; /*retira o espaço entre as células*/
+	margin-left: auto; /*para centralizar*/
+	margin-right: auto;
+
+}
+
+table#tabelaspec td { /*mexe com toda a borda que for td(interno)*/
+	border: 1px solid #606060;
+	padding: 10px; /*espaço interno de qualquer objeto*/
+	text-align:center;
+	vertical-align: middle;
+}
+
+table#tabelaspec td.ce {
+	color: #ffffff; /*letras brancas*/
+	background-color: #606060; /*fundo cinza escuro*/
+	vertical-align: top;/*alinhado à primeira linha (classe sobrepõe)*/
+	font-weight: bold; /*negrito*/
+	text-align: right;
+}
+
+table#tabelaspec caption{ /*configurando o título da tabela*/
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+
+}
+
+table#tabelaspec td.cd{
+	background-color: #cecece;
+	
+}
+
+table#tabelaspec caption span{
+	display:block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
 }
 
 aside#lateral{
 	display: block;
 	width: 350px;
 	float: right;
+	background-color: #dddddd;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1{
+	font-family: 'FonteLogo',sans-serif;
+	font-size:20pt;
+	color: #606060;
+	margin-top: 0px;
+}
+
+aside#lateral h1{
+	background-color: #606060;
+	font-size: 15pt;
+	color: #ffffff;
+	padding: 5px;
+
+}
+
+footer#rodape{
+	clear: both; /*como se limpasse as configurações*/
+	border-top: 1px solid #606060; /*borda em cima*/
+}
+
+footer#rodape p{
+	text-align:center; /*centralizado*/
 }
